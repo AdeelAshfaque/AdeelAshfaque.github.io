@@ -1,0 +1,140 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{parskip}
+
+% Colors
+\definecolor{heading}{RGB}{30,30,30}
+\definecolor{subheading}{RGB}{60,60,60}
+\definecolor{body}{RGB}{80,80,80}
+\definecolor{accent}{RGB}{40,40,40}
+\definecolor{rulecolor}{RGB}{180,180,180}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    urlcolor=accent,
+    pdftitle={Adeel Ashfaque - Resume},
+    pdfauthor={Adeel Ashfaque}
+}
+
+% Section formatting
+\titleformat{\section}
+  {\Large\bfseries\color{heading}}
+  {}
+  {0em}
+  {}
+  [\vspace{-0.5em}\textcolor{rulecolor}{\rule{\textwidth}{0.5pt}}]
+
+\titlespacing*{\section}{0pt}{1.2em}{0.6em}
+
+% Custom commands
+\newcommand{\resumeHeader}[5]{
+    \begin{center}
+        {\Huge\bfseries\color{heading} #1}\\[0.4em]
+        {\normalsize\color{body}
+        \textbf{#2} \quad|\quad #3 \quad|\quad \href{https://#4}{#4} \quad|\quad #5}
+    \end{center}
+    \vspace{0.3em}
+}
+
+\newcommand{\projectEntry}[3]{
+    \textbf{#1} \hfill \textit{#2}\\
+    #3
+    \vspace{0.4em}
+}
+
+\newcommand{\educationEntry}[3]{
+    \textbf{#1} --- #2 \hfill \textit{#3}
+}
+
+\newcommand{\experienceEntry}[4]{
+    \textbf{#1} \hfill #2\\
+    \textit{#3} \hfill \textit{#4}
+}
+
+% List settings
+\setlist[itemize]{leftmargin=1.2em,itemsep=0.15em,topsep=0.2em,parsep=0pt}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+\begin{document}
+
+% Header
+\resumeHeader
+    {Adeel Ashfaque}
+    {0321-8386104}
+    {adeelashfaque916@gmail.com}
+    {linkedin.com/in/adeel-ashfaque-37884a286}
+    {Sukkur District, Sindh, Pakistan}
+
+% Summary
+\section{Summary}
+Final-year Computer Science student at Sukkur IBA University and Full Stack Developer with hands-on experience building production-ready web applications, REST APIs, and AI/ML solutions. Proven ability to deliver end-to-end projects using Python, FastAPI, React, and MongoDB with Docker containerization. Seeking a software engineering or full stack development internship or entry-level role to apply expertise in backend systems, responsive frontends, and intelligent applications.
+
+% Technical Skills
+\section{Technical Skills}
+\begin{itemize}[label={}]
+    \item \textbf{Programming:} Python, JavaScript, HTML/CSS, SQL, C++
+    \item \textbf{Backend \& APIs:} FastAPI, Django, Node.js, REST APIs, JWT Authentication, Role-Based Access Control
+    \item \textbf{Frontend:} React, Responsive Web Design, Modern JavaScript, HTML/CSS
+    \item \textbf{Databases:} MongoDB, MySQL, Database Design, Data Modeling
+    \item \textbf{AI/ML \& Data:} Machine Learning, Data Analysis, Data Visualization, AI Systems
+    \item \textbf{Tools \& DevOps:} Docker, Git, GitHub, Digital Ocean
+\end{itemize}
+
+% Projects
+\section{Projects}
+
+\textbf{E-Commerce Platform} \hfill \textit{FastAPI, React, MongoDB, JWT} $|$ GitHub
+\begin{itemize}
+    \item Built a full-stack ecommerce application with authentication, role-based access control, product management, and order processing
+    \item Designed RESTful backend APIs in FastAPI with JWT-secured endpoints and MongoDB for flexible data persistence
+    \item Developed a responsive React frontend with dynamic product catalog, cart management, and admin dashboard
+\end{itemize}
+
+\textbf{Stock Price Predictor AI} \hfill \textit{Python, Machine Learning, AI, Data Analysis} $|$ GitHub
+\begin{itemize}
+    \item Engineered an AI/ML pipeline focused on analyzing stock market data and predicting future price movements using historical datasets
+    \item Implemented data preprocessing, feature engineering, and model training workflows for time-series forecasting
+    \item Visualized prediction trends and model performance metrics for actionable financial insights
+\end{itemize}
+
+\textbf{AI Life Replay} \hfill \textit{Python, AI, Machine Learning} $|$ GitHub
+\begin{itemize}
+    \item Developed an AI-focused project exploring intelligent analysis, memory systems, and personalized digital experiences
+    \item Built machine learning models to process and analyze behavioral data for generating contextual insights
+    \item Designed modular architecture enabling extensible AI-driven recommendation and replay functionalities
+\end{itemize}
+
+\textbf{Consolics} \hfill \textit{Python, Web Development, AI} $|$ GitHub
+\begin{itemize}
+    \item Built a practical digital solution leveraging modern development technologies with integrated AI capabilities
+    \item Architected backend services in Python with intelligent automation features for enhanced user workflows
+    \item Delivered a clean, maintainable codebase following RESTful design principles and modular project structure
+\end{itemize}
+
+% Certifications
+\section{Certifications}
+\begin{itemize}
+    \item Data Visualization with Python
+    \item Responsive Web Design
+\end{itemize}
+
+% Education
+\section{Education}
+
+\textbf{Sukkur IBA University} --- Bachelor of Science in Computer Science \hfill Expected April 2024
+
+\vspace{0.5em}
+\textbf{Army Public School (APSACS)} --- Higher Secondary Education \hfill 2011 -- 2023
+
+\end{document}
